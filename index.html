@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -24,17 +25,15 @@ scroll-behavior:smooth;
 
 body{
 
-font-family:Inter,sans-serif;
-
 background:#000;
 
 color:#fff;
 
+font-family:Inter,sans-serif;
+
 overflow-x:hidden;
 
 }
-
-/* Watermark */
 
 body::before{
 
@@ -48,7 +47,7 @@ left:50%;
 
 transform:translate(-50%,-50%);
 
-font-size:24vw;
+font-size:22vw;
 
 font-weight:900;
 
@@ -94,8 +93,6 @@ height:auto;
 
 }
 
-/* Music */
-
 .music{
 
 position:fixed;
@@ -136,8 +133,6 @@ background:#fff;
 
 color:#000;
 
-transform:scale(1.05);
-
 }
 
 /* Hero */
@@ -162,7 +157,7 @@ gap:25px;
 
 .hero-logo{
 
-width:300px;
+width:320px;
 
 max-width:90%;
 
@@ -244,8 +239,6 @@ margin:80px 0;
 
 }
 
-/* Section titles */
-
 .section-title{
 
 font-size:42px;
@@ -258,51 +251,57 @@ margin-bottom:40px;
 
 /* DRUMS */
 
-.video-scroll{
+.drums-container{
 
 display:flex;
 
-gap:25px;
-
-overflow-x:auto;
-
-padding-bottom:20px;
+justify-content:center;
 
 }
 
-.video-scroll::-webkit-scrollbar{
-
-height:5px;
-
-}
-
-.video-scroll::-webkit-scrollbar-thumb{
-
-background:#fff;
-
-}
-
-.video-card{
-
-min-width:380px;
-
-height:240px;
-
-border:1px solid rgba(255,255,255,.15);
-
-border-radius:28px;
-
-overflow:hidden;
-
-}
-
-.video-card video{
+.drums-card{
 
 width:100%;
 
-height:100%;
+max-width:900px;
 
-object-fit:cover;
+overflow:hidden;
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:30px;
+
+background:#050505;
+
+}
+
+.drums-card video{
+
+width:100%;
+
+display:block;
+
+}
+
+.drums-info{
+
+padding:25px;
+
+text-align:center;
+
+}
+
+.drums-info h3{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+.drums-info p{
+
+color:#888;
 
 }
 
@@ -328,9 +327,9 @@ border-radius:28px;
 
 background:#050505;
 
-transition:.3s;
-
 cursor:pointer;
+
+transition:.3s;
 
 }
 
@@ -398,13 +397,13 @@ width:60px;
 
 .hero-logo{
 
-width:230px;
+width:240px;
 
 }
 
 .hero h1{
 
-font-size:36px;
+font-size:38px;
 
 }
 
@@ -420,17 +419,17 @@ font-size:30px;
 
 }
 
-.video-card{
-
-min-width:320px;
-
-height:220px;
-
-}
-
 .gallery-card video{
 
 height:240px;
+
+}
+
+.music{
+
+width:55px;
+
+height:55px;
 
 }
 
@@ -500,13 +499,25 @@ DRUMS
 
 </div>
 
-<div class="video-scroll">
+<div class="drums-container">
 
-<div class="video-card"><video controls><source src="video1.mp4"></video></div>
+<div class="drums-card">
 
-<div class="video-card"><video controls><source src="video2.mp4"></video></div>
+<video controls playsinline>
 
-<div class="video-card"><video controls><source src="video3.mp4"></video></div>
+<source src="ButtsVideo.mp4" type="video/mp4">
+
+</video>
+
+<div class="drums-info">
+
+<h3>BRING OUT THE WEEKEND DRUMS</h3>
+
+<p>The original BUTTS experience.</p>
+
+</div>
+
+</div>
 
 </div>
 
