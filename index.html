@@ -34,6 +34,8 @@ overflow-x:hidden;
 
 }
 
+/* Watermark */
+
 body::before{
 
 content:"BUTTS";
@@ -46,7 +48,7 @@ left:50%;
 
 transform:translate(-50%,-50%);
 
-font-size:25vw;
+font-size:24vw;
 
 font-weight:900;
 
@@ -88,9 +90,19 @@ padding:25px 0;
 
 width:75px;
 
+height:auto;
+
 }
 
+/* Music */
+
 .music{
+
+position:fixed;
+
+top:25px;
+
+right:25px;
 
 width:60px;
 
@@ -110,6 +122,10 @@ cursor:pointer;
 
 font-size:20px;
 
+background:#000;
+
+z-index:999;
+
 transition:.3s;
 
 }
@@ -119,6 +135,8 @@ transition:.3s;
 background:#fff;
 
 color:#000;
+
+transform:scale(1.05);
 
 }
 
@@ -170,7 +188,7 @@ transform:translateY(-15px);
 
 .hero h1{
 
-font-size:56px;
+font-size:58px;
 
 max-width:900px;
 
@@ -226,7 +244,7 @@ margin:80px 0;
 
 }
 
-/* Titles */
+/* Section titles */
 
 .section-title{
 
@@ -238,7 +256,7 @@ margin-bottom:40px;
 
 }
 
-/* Videos */
+/* DRUMS */
 
 .video-scroll{
 
@@ -249,6 +267,18 @@ gap:25px;
 overflow-x:auto;
 
 padding-bottom:20px;
+
+}
+
+.video-scroll::-webkit-scrollbar{
+
+height:5px;
+
+}
+
+.video-scroll::-webkit-scrollbar-thumb{
+
+background:#fff;
 
 }
 
@@ -300,11 +330,15 @@ background:#050505;
 
 transition:.3s;
 
+cursor:pointer;
+
 }
 
 .gallery-card:hover{
 
-transform:translateY(-5px);
+transform:translateY(-6px);
+
+border-color:rgba(255,255,255,.4);
 
 }
 
@@ -328,9 +362,13 @@ text-align:center;
 
 .gallery-info h3{
 
-font-size:22px;
+font-size:20px;
+
+font-weight:700;
 
 }
+
+/* Footer */
 
 footer{
 
@@ -392,7 +430,7 @@ height:220px;
 
 .gallery-card video{
 
-height:250px;
+height:240px;
 
 }
 
@@ -414,13 +452,13 @@ height:250px;
 
 </video>
 
+</header>
+
 <div class="music" onclick="toggleMusic()">
 
 ♫
 
 </div>
-
-</header>
 
 <section class="hero">
 
@@ -444,7 +482,7 @@ Videos, memes, music, chaos and pure BUTTS energy.
 
 </p>
 
-<button class="enter-button" onclick="document.getElementById('videos').scrollIntoView()">
+<button class="enter-button" onclick="document.getElementById('drums').scrollIntoView()">
 
 Enter Chaos
 
@@ -454,11 +492,11 @@ Enter Chaos
 
 <div class="divider"></div>
 
-<section id="videos">
+<section id="drums">
 
 <div class="section-title">
 
-VIDEOS
+DRUMS
 
 </div>
 
@@ -486,25 +524,25 @@ BUTTIVERSE
 
 <div class="gallery-grid">
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="ValuableButt.gif.mp4"></video><div class="gallery-info"><h3>Valuable Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="ValuableButt.gif.mp4"></video><div class="gallery-info"><h3>VALUABLE BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="SpaceButt.gif.mp4"></video><div class="gallery-info"><h3>Space Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="SpaceButt.gif.mp4"></video><div class="gallery-info"><h3>SPACE BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="InceptionButt.gif.mp4"></video><div class="gallery-info"><h3>Inception Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="InceptionButt.gif.mp4"></video><div class="gallery-info"><h3>INCEPTION BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="BouncyButt.gif.mp4"></video><div class="gallery-info"><h3>Bouncy Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="BouncyButt.gif.mp4"></video><div class="gallery-info"><h3>BOUNCY BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="ClappingButt.gif.mp4"></video><div class="gallery-info"><h3>Clapping Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="ClappingButt.gif.mp4"></video><div class="gallery-info"><h3>CLAPPING BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="PabsButt.gif.mp4"></video><div class="gallery-info"><h3>Pabs Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="PabsButt.gif.mp4"></video><div class="gallery-info"><h3>PABS BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="PirateButt.gif.mp4"></video><div class="gallery-info"><h3>Pirate Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="PirateButt.gif.mp4"></video><div class="gallery-info"><h3>PIRATE BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="SeeingButt.gif.mp4"></video><div class="gallery-info"><h3>Seeing Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="SeeingButt.gif.mp4"></video><div class="gallery-info"><h3>SEEING BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="GlassesButt.gif.mp4"></video><div class="gallery-info"><h3>Glasses Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="GlassesButt.gif.mp4"></video><div class="gallery-info"><h3>GLASSES BUTT</h3></div></div>
 
-<div class="gallery-card"><video autoplay muted loop playsinline><source src="SwingingButt.gif.mp4"></video><div class="gallery-info"><h3>Swinging Butt</h3></div></div>
+<div class="gallery-card"><video autoplay muted loop playsinline><source src="SwingingButt.gif.mp4"></video><div class="gallery-info"><h3>SWINGING BUTT</h3></div></div>
 
 </div>
 
@@ -552,4 +590,4 @@ music.innerHTML="♫";
 
 </body>
 
-</html> 
+</html>
